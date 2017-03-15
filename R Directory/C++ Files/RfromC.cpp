@@ -12,3 +12,8 @@ NumericVector callFunction(NumericVector x, Function f) {
 int DoubleMe(int y){
 	return y * 2;
 }	
+
+// [[Rcpp::export]]
+int AddMe(int y){
+	return y + 2;
+}
