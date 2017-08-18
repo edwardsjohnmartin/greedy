@@ -1,0 +1,13 @@
+General Algorithm when there are categorical variables
+
+1) get steps
+2) create a matrix with 3 columns with 'steps' rows
+3) set the names of the columns to "Model", "Drop", inform
+4) create a lm model of the formula that was passed into greedy
+5) create a list of all the main effect terms in squared form - ex. V1 -> I(V1^2)
+6) create a list of all the interaction terms
+7) combine the 3 lists together into a single list Xall: 
+	X - all main effect terms
+	Xint - all interaction terms
+	Xsq - all squared terms
+8) 

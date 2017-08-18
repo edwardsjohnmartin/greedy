@@ -1,0 +1,17 @@
+Agenda 
+
+1. fix variable names in get.higher.order
+2. fix variable names in get.names.matrix
+3. fix variable names in get.clean.model
+4. change method names to better names
+5. make sure get.names.matrix works with glm's
+6. analyze crabs dataset
+7. add crabs dataset to excel spreadsheets
+8. get stepAIC times for all models
+9. combine greedy and stepAIC results into one spreadsheet
+10. make graphs showing difference in times
+11. make a dataset from results of greedy and stepAIC
+12. analyze new dataset and add it to spreadsheets
+13. make centering work by passing in a vector of the names of the columns to be centered
+14. in AIC differences in greedy and stepAIC, find 5 models with the widest difference and find out 
+    where the differences occured.

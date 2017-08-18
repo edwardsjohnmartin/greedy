@@ -1,0 +1,74 @@
+dropTermFromLM <- function(model){
+    
+    print("start of the dropTermFromLM method")
+    
+    library(stringr)
+    coefMatrix <- coef(summary(model))[2:nrow(coef(summary(model))),]
+    print(coefMatrix)
+    
+    namesList <- variable.names(model)
+    dropped <- rownames(coefMatrix)[which(abs(coefMatrix[, 3]) == min(abs(coefMatrix[, 3])))]
+    
+    
+    
+    #This will print the whole list of names that still exist in the model prior to dropping anything this step
+    #print(namesList)
+    
+    drop.this <- as.integer(which(abs(coefMatrix[, 3]) == min(abs(coefMatrix[, 3]))))
+    print(paste("drop.this before if statement = ", drop.this))
+    
+    if(nchar(dropped) <= 3){
+      instanceCount <- length(grep(dropped, namesList))
+    
+      #Prints how many times a main effect was found in the list, can only be dropped if its in the list once
+      print(paste0("The number of times ", dropped, " was found is ", toString(instanceCount)))
+      
+      if(instanceCount != 1){
+        #this line needs to find the next lowest abs value, not the lowest, because we cannot drop the lowest
+        
+        
+        print("letterCount is not one so this term cannot be dropped")
+        
+        newCoefMatrix <- coefMatrix[rownames(coefMatrix) != dropped,]
+        #print(newCoefMatrix)
+        
+        #print(length(newCoefMatrix))
+        
+        print("Create new drop.this")
+        
+        previousSpot <- drop.this
+        
+        drop1.this <- rownames(newCoefMatrix)[which(abs(newCoefMatrix[, 3]) == min(abs(newCoefMatrix[, 3])))]
+        drop.this <- as.integer(which(abs(newCoefMatrix[, 3]) == min(abs(newCoefMatrix[, 3]))))
+        
+        if(drop.this > previousSpot){
+          drop.this <- drop.this + 1
+        }
+        
+        #print(paste("Lets see if this works: ", drop1.this, drop.this))
+      }
+      else{
+        print("the else part was run")
+        #drop.this <- as.integer(which(abs(coefMatrix[, 3]) == min(abs(coefMatrix[, 3]))))
+      }
+    }
+    
+    drop.this <- namesList == drop1.this
+    
+    print(paste("drop.this after if statement = ", drop.this))
+    
+    #drop.this <- as.integer(which(abs(coefMatrix[, 3]) == min(abs(coefMatrix[, 3]))))
+    
+    #this gets the name of the interaction with the lowest abs value t-score
+    #print(dropped)
+    
+    termsData <- terms(as.formula(model$terms))
+    
+    temp <- drop.terms(termsData, drop.this, keep.response = TRUE)
+    
+    mod.terms <- attr(temp, "term.labels")
+    
+    extractedFormula <- as.formula(paste(c(paste((attr(model$terms, "variables")[2]), "~ 1 "), mod.terms), collapse = " + "))
+    
+    newLM <- lm(extractedFormula, data = varData)
+  }

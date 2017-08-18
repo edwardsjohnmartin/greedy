@@ -1,0 +1,62 @@
+get.higher.order breakdown
+
+takes in:
+x - list of all interaction terms
+Xn - list of all numeric terms
+data - data used in the model
+
+---start of function---
+
+data1 <- data
+
+data1[names(data1) == Xn] <- rep(Xn, nrow(data1))
+-sets the quantitative columns data to just be the name of the variable
+
+res <- list()
+
+nhigher <- length(x)
+-number of interaction terms
+
+for (i in 1:nhigher){
+
+	temp <- list()
+	-create a new list
+	
+   	higher.comp <- strsplit(x[i], ":")
+	-creates a list of all the main effects of the interaction term at x[i]
+
+   	Xs <- unlist(higher.comp)
+	-
+
+   	mat <- match(Xs, names(data1))
+	-creates a list of the indicies in data1 of the main effects used in the current interaction term 
+
+   	nlvl <- apply(data1[, mat], 2, function(x) nlevels(factor(x)))
+	-creates a list of the levels for the main effects used in the current interaction term
+
+	for (j in 1:length(mat)) {
+      		
+		if (nlvl[j] == 1)
+		-if the main effect only has 1 level
+        
+			temp[[j]] <- paste(Xs[j], levels(data1[, names(data1) == Xs[j]]), sep = "")
+
+      		if (nlvl[j] > 1)
+		-if the main effect has more than 1 level
+
+        		temp[[j]] <- paste(Xs[j], levels(data1[, names(data1) == Xs[j]]), sep = "")[2:nlvl[j]]
+    	}
+
+    	temp1 <- as.matrix(interaction(temp, sep = ":"))
+
+    	res[[i]] <- as.vector(temp1)
+ 	
+}
+  
+names(res) <- x
+
+res
+
+
+
+---end of function---

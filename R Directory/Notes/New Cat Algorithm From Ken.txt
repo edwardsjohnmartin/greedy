@@ -1,0 +1,54 @@
+Goal: To understand the new code given to me by Ken Aho and to utilize the code to come up with an algorithm to meet the goals of the greedy function
+
+We start by creating some variables. 
+We will have a Y response variable
+XC1 Categorical Variable
+XC2 Categorical Variable
+XC3 Categorical Variable
+XQ1 Quantitative Variable
+
+model <- lm(Y ~ XC1 * XC2)
+
+data <- get_all_vars(model)
+-Creates a data frame that contains the data used by the model
+
+m <- model.frame(model, data = data)
+-Creates a data frame that contains the data used by the model
+
+Y <- model.extract(m, "response")
+-Creates a list of just the response column of the data for the model
+
+terms <- terms(m)
+-Breaks down the model into a few categories 
+"variables" 
+"factors"
+"term.labels"
+"order"
+"intercept"
+"response"
+".Enviroment"
+"predvars"
+"dataClasses"
+
+X <- attr(terms,"term.labels")
+-Creates a list of the variables in the model as well as their interactions
+
+d <- attr(terms,"dataClasses")[2:(length(X)+1)]
+d <- d[complete.cases(d)]
+-Creates a list of the variables in the model as well as their class type
+-If there is anything in the list that is NA, it will remove it from the list
+
+Xn <- X[match(names(d)[d == "numeric"],X)]
+-Creates a list of just the numberic variables
+
+Xc <- X[match(names(d)[d == "factor"],X)]
+-Creates a list of just the categorical variables
+
+order.lvl <- attr(terms,"order")
+
+higher <- X[order.lvl > 1]
+-Creates a list of all the terms in X that are at least order level 2
+
+no.lvls <- apply(data[,match(Xc, names(data))],2,function(x)nlevels(as.factor(x)))
+
+if(length(higher) > 0) ints <- get.higher.order(higher)

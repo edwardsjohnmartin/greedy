@@ -1,0 +1,5 @@
+difference of time taken ~ algorithm(cat) + dataset(cat) + # of rows of data + # of cat variables + # of quan variables + # of squared terms + interaction level(cat)
+
+difference of time taken ~ algorithm(cat) + dataset(cat) + type of model(lm or glm)(cat) + # of rows of data + # of cat variables + # of quan variables + # of squared terms + interaction level(cat)
+
+percent greedy better timewise ~ # of rows of data + # of rows of data + # of cat variables + # of quan variables + # of squared terms 

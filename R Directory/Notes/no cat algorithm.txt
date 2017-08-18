@@ -1,0 +1,28 @@
+General Algorithm when there are no categorical variables
+
+1) get steps
+2) create a matrix with 3 columns with 'steps' rows
+3) set the names of the columns to "Model", "Drop", inform
+4) create a lm model of the formula that was passed into greedy
+5) create a list of all the main effect terms in squared form - ex. V1 -> I(V1^2)
+6) create a list of all the interaction terms
+7) combine the 3 lists together into a single list Xall: 
+	X - all main effect terms
+	Xint - all interaction terms
+	Xsq - all squared terms
+8) create a formula with the Y term predicted by 1 + Xall
+9) create a lm using the formula
+
+Within Drops
+
+1) get number of rows of coefficients of the summary of the lm (this will include the intercept)
+ 
+ -as long as there is more than just the intercept-
+2) create a coefficient matrix, sumsat, of all the rows excluding the intercept 
+ note: each row of sumsat is either a main effect, an interaction, or a squared term
+       in other words, each row is another item of Xall
+3) create a list, mod.terms, of all terms in the current model
+4) find the term, drop1, in sumsat with the lowest t-value
+5) create a new formula with mod.terms excluding drop1
+6) fit a new model to the formula
+7) return a list of the new formula, the new model, the term that was dropped, and the AIC value of the model

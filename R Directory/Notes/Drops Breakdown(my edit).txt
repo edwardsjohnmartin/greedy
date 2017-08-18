@@ -1,0 +1,103 @@
+Drops Breakdown
+
+Takes in: 
+	mod1 - current LM model
+	X - list of all main effect variables
+	
+***Start of Drops***
+
+np <- nrow(coef(summary(mod1)))
+
+* Gets the number of rows in mod1, 
+  this will include the intercept row, 
+  so if there a total of 9 main effects/interactions/squared terms, 
+  then np will be 10 to account for the intercept
+
+* This means there are 2 routes from here, 
+  either will equal 2 for a single variable plus the intercept
+  or np will be greater than 2
+  meaning a term will need to be dropped
+
+if(np == 2){
+
+	new.mod <- update(mod1, ~ 1)
+	* This line updates mod1 to just be predicted by a 1,
+	  in other words, it removes the last predictor variable
+
+	res <- list(formula = paste(Yname,"~ 1"), model = new.mod, drop = attr(terms(mod1), "term.labels"), 
+		inf.crit = round(inf(new.mod, inform), digits = digits))}
+	* This line creates a list that will be returned at the end of the drops function
+	  Contained in the list is:
+		$formula - The formula after the update was run, meaning it will be of the form: response ~ 1
+		$model - The lm model of the formula
+ 		$drop - The last predictor variable in mod1
+		$inf.crit - Measure of the relative quality of the current model using the criterion the user has chosen
+
+if(np > 2){
+
+	sumsat <- coef(summary(mod1))[2:np,]
+	* This will produce a matrix of all the current predictor variables
+	  The name of the row will be the variable
+	  The 3rd column will be the variables t-value
+
+	mod.terms <- attr(terms(mod1), "term.labels")
+	* This will create a list of all the possible predictor variables in the current model
+
+	drop1 = getTermToDrop(sumsat, mod.terms)
+	* Sets drop1 to whatever term in the LM model has the lowest t-value
+	* If drop1 contains a categorical variable, it will be its full form 
+	* ex. VariableNameLevelName 
+
+	if(Xcn >= 1)
+	* If there are any categorical variables
+
+		drop1 <- Xlm[,1][Xlm[,2]==drop1]
+		* If drop1 contained a categorical variable it will change it to not incude the level of the categorical variable
+		
+		m <- match(rownames(sumsat),Xlm[,2])
+		* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1]))>0){
+	* This if statement first checks whether drop1 is a main effect
+	  The next part checks to see if there are any instances of the variable remaining in the list of all variables
+	  If there are instances of the main effect still, the length will be greater than 0
+
+	drop1 <- redo(drop1, sumsat)$drop1
+	* This line will get a new drop1 using the redo function
+
+	f1 <- as.formula(paste(c(paste(Yname,"~ 1 "), mod.terms[mod.terms!=drop1]), collapse=" + "))
+	*  This will make a new formula in the form: 
+	   	response ~ 1 + all the predictor variables excluding what drop is
+
+	new.mod <- lm(f1, data= data)
+	* This line will create a new LM model using the formula created in the previous line 
+
+	res <- list(formula = paste(c(paste(Yname,"~ 1 "), mod.terms[mod.terms!=drop1]), collapse=" + "), 
+                    model = new.mod, drop = drop1, inf.crit = round(inf(new.mod, inform), digits = digits))
+	* This line creates a list that will be returned at the end of the drops function
+	  Contained in the list is:
+		$formula - The new formula of all the predictor variables excluding drop1
+		$model - The lm model of the formula
+		$drop - The term that was dropped from the previous lm model
+		$inf.crit - Measure of the relative quality of the current model using the criterion the user has chosen
+
+Returns: 
+	res
+	* This will contain slightly different information depending on if there were 1 predictor variable remaining,
+	  or if there were more than 1.
+	* The format of res is the same in both instances however
+
+***End of Drops***	

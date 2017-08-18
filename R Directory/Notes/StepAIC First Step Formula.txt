@@ -1,0 +1,704 @@
+Start:  AIC=5943.92
+Cement ~ Blast.Furnace * Fly.Ash * Water * Superplas * Coarse.Agg * 
+    Fine.Agg * Age * Com.Str * I(Blast.Furnace^2) * I(Fly.Ash^2)
+
+
+Step:  AIC=5943.92
+Cement ~ Blast.Furnace + Fly.Ash + Water + Superplas + Coarse.Agg + 
+    Fine.Agg + Age + Com.Str + I(Blast.Furnace^2) + I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash + Blast.Furnace:Water + Fly.Ash:Water + 
+    Blast.Furnace:Superplas + Fly.Ash:Superplas + Water:Superplas + 
+    Blast.Furnace:Coarse.Agg + Fly.Ash:Coarse.Agg + Water:Coarse.Agg + 
+    Superplas:Coarse.Agg + Blast.Furnace:Fine.Agg + Fly.Ash:Fine.Agg + 
+    Water:Fine.Agg + Superplas:Fine.Agg + Coarse.Agg:Fine.Agg + 
+    Blast.Furnace:Age + Fly.Ash:Age + Water:Age + Superplas:Age + 
+    Coarse.Agg:Age + Fine.Agg:Age + Blast.Furnace:Com.Str + Fly.Ash:Com.Str + 
+    Water:Com.Str + Superplas:Com.Str + Coarse.Agg:Com.Str + 
+    Fine.Agg:Com.Str + Age:Com.Str + Blast.Furnace:I(Blast.Furnace^2) + 
+    Fly.Ash:I(Blast.Furnace^2) + Water:I(Blast.Furnace^2) + Superplas:I(Blast.Furnace^2) + 
+    Coarse.Agg:I(Blast.Furnace^2) + Fine.Agg:I(Blast.Furnace^2) + 
+    Age:I(Blast.Furnace^2) + Com.Str:I(Blast.Furnace^2) + Blast.Furnace:I(Fly.Ash^2) + 
+    Fly.Ash:I(Fly.Ash^2) + Water:I(Fly.Ash^2) + Superplas:I(Fly.Ash^2) + 
+    Coarse.Agg:I(Fly.Ash^2) + Fine.Agg:I(Fly.Ash^2) + Age:I(Fly.Ash^2) + 
+    Com.Str:I(Fly.Ash^2) + I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water + Blast.Furnace:Fly.Ash:Superplas + 
+    Blast.Furnace:Water:Superplas + Fly.Ash:Water:Superplas + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg + Blast.Furnace:Water:Coarse.Agg + 
+    Fly.Ash:Water:Coarse.Agg + Blast.Furnace:Superplas:Coarse.Agg + 
+    Fly.Ash:Superplas:Coarse.Agg + Water:Superplas:Coarse.Agg + 
+    Blast.Furnace:Fly.Ash:Fine.Agg + Blast.Furnace:Water:Fine.Agg + 
+    Fly.Ash:Water:Fine.Agg + Blast.Furnace:Superplas:Fine.Agg + 
+    Fly.Ash:Superplas:Fine.Agg + Water:Superplas:Fine.Agg + Blast.Furnace:Coarse.Agg:Fine.Agg + 
+    Fly.Ash:Coarse.Agg:Fine.Agg + Water:Coarse.Agg:Fine.Agg + 
+    Superplas:Coarse.Agg:Fine.Agg + Blast.Furnace:Fly.Ash:Age + 
+    Blast.Furnace:Water:Age + Fly.Ash:Water:Age + Blast.Furnace:Superplas:Age + 
+    Fly.Ash:Superplas:Age + Water:Superplas:Age + Blast.Furnace:Coarse.Agg:Age + 
+    Fly.Ash:Coarse.Agg:Age + Water:Coarse.Agg:Age + Superplas:Coarse.Agg:Age + 
+    Blast.Furnace:Fine.Agg:Age + Fly.Ash:Fine.Agg:Age + Water:Fine.Agg:Age + 
+    Superplas:Fine.Agg:Age + Coarse.Agg:Fine.Agg:Age + Blast.Furnace:Fly.Ash:Com.Str + 
+    Blast.Furnace:Water:Com.Str + Fly.Ash:Water:Com.Str + Blast.Furnace:Superplas:Com.Str + 
+    Fly.Ash:Superplas:Com.Str + Water:Superplas:Com.Str + Blast.Furnace:Coarse.Agg:Com.Str + 
+    Fly.Ash:Coarse.Agg:Com.Str + Water:Coarse.Agg:Com.Str + Superplas:Coarse.Agg:Com.Str + 
+    Blast.Furnace:Fine.Agg:Com.Str + Fly.Ash:Fine.Agg:Com.Str + 
+    Water:Fine.Agg:Com.Str + Superplas:Fine.Agg:Com.Str + Coarse.Agg:Fine.Agg:Com.Str + 
+    Blast.Furnace:Age:Com.Str + Fly.Ash:Age:Com.Str + Water:Age:Com.Str + 
+    Superplas:Age:Com.Str + Coarse.Agg:Age:Com.Str + Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:I(Blast.Furnace^2) + Blast.Furnace:Water:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:I(Blast.Furnace^2) + Blast.Furnace:Superplas:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:I(Blast.Furnace^2) + Water:Superplas:I(Blast.Furnace^2) + 
+    Blast.Furnace:Coarse.Agg:I(Blast.Furnace^2) + Fly.Ash:Coarse.Agg:I(Blast.Furnace^2) + 
+    Water:Coarse.Agg:I(Blast.Furnace^2) + Superplas:Coarse.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fine.Agg:I(Blast.Furnace^2) + Fly.Ash:Fine.Agg:I(Blast.Furnace^2) + 
+    Water:Fine.Agg:I(Blast.Furnace^2) + Superplas:Fine.Agg:I(Blast.Furnace^2) + 
+    Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + Blast.Furnace:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Age:I(Blast.Furnace^2) + Water:Age:I(Blast.Furnace^2) + 
+    Superplas:Age:I(Blast.Furnace^2) + Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Fine.Agg:Age:I(Blast.Furnace^2) + Blast.Furnace:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Com.Str:I(Blast.Furnace^2) + Water:Com.Str:I(Blast.Furnace^2) + 
+    Superplas:Com.Str:I(Blast.Furnace^2) + Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fine.Agg:Com.Str:I(Blast.Furnace^2) + Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:I(Fly.Ash^2) + Blast.Furnace:Water:I(Fly.Ash^2) + 
+    Fly.Ash:Water:I(Fly.Ash^2) + Blast.Furnace:Superplas:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:I(Fly.Ash^2) + Water:Superplas:I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:I(Fly.Ash^2) + Fly.Ash:Coarse.Agg:I(Fly.Ash^2) + 
+    Water:Coarse.Agg:I(Fly.Ash^2) + Superplas:Coarse.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fine.Agg:I(Fly.Ash^2) + Fly.Ash:Fine.Agg:I(Fly.Ash^2) + 
+    Water:Fine.Agg:I(Fly.Ash^2) + Superplas:Fine.Agg:I(Fly.Ash^2) + 
+    Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + Blast.Furnace:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Age:I(Fly.Ash^2) + Water:Age:I(Fly.Ash^2) + Superplas:Age:I(Fly.Ash^2) + 
+    Coarse.Agg:Age:I(Fly.Ash^2) + Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Com.Str:I(Fly.Ash^2) + Fly.Ash:Com.Str:I(Fly.Ash^2) + 
+    Water:Com.Str:I(Fly.Ash^2) + Superplas:Com.Str:I(Fly.Ash^2) + 
+    Coarse.Agg:Com.Str:I(Fly.Ash^2) + Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Age:Com.Str:I(Fly.Ash^2) + Blast.Furnace:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:I(Blast.Furnace^2):I(Fly.Ash^2) + Water:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:I(Blast.Furnace^2):I(Fly.Ash^2) + Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Water:Superplas + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg + Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg + Fly.Ash:Water:Superplas:Coarse.Agg + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg + Blast.Furnace:Fly.Ash:Superplas:Fine.Agg + 
+    Blast.Furnace:Water:Superplas:Fine.Agg + Fly.Ash:Water:Superplas:Fine.Agg + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg + Blast.Furnace:Water:Coarse.Agg:Fine.Agg + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg + Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg + Water:Superplas:Coarse.Agg:Fine.Agg + 
+    Blast.Furnace:Fly.Ash:Water:Age + Blast.Furnace:Fly.Ash:Superplas:Age + 
+    Blast.Furnace:Water:Superplas:Age + Fly.Ash:Water:Superplas:Age + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Age + Blast.Furnace:Water:Coarse.Agg:Age + 
+    Fly.Ash:Water:Coarse.Agg:Age + Blast.Furnace:Superplas:Coarse.Agg:Age + 
+    Fly.Ash:Superplas:Coarse.Agg:Age + Water:Superplas:Coarse.Agg:Age + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Age + Blast.Furnace:Water:Fine.Agg:Age + 
+    Fly.Ash:Water:Fine.Agg:Age + Blast.Furnace:Superplas:Fine.Agg:Age + 
+    Fly.Ash:Superplas:Fine.Agg:Age + Water:Superplas:Fine.Agg:Age + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Age + Fly.Ash:Coarse.Agg:Fine.Agg:Age + 
+    Water:Coarse.Agg:Fine.Agg:Age + Superplas:Coarse.Agg:Fine.Agg:Age + 
+    Blast.Furnace:Fly.Ash:Water:Com.Str + Blast.Furnace:Fly.Ash:Superplas:Com.Str + 
+    Blast.Furnace:Water:Superplas:Com.Str + Fly.Ash:Water:Superplas:Com.Str + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Com.Str + Blast.Furnace:Water:Coarse.Agg:Com.Str + 
+    Fly.Ash:Water:Coarse.Agg:Com.Str + Blast.Furnace:Superplas:Coarse.Agg:Com.Str + 
+    Fly.Ash:Superplas:Coarse.Agg:Com.Str + Water:Superplas:Coarse.Agg:Com.Str + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Com.Str + Blast.Furnace:Water:Fine.Agg:Com.Str + 
+    Fly.Ash:Water:Fine.Agg:Com.Str + Blast.Furnace:Superplas:Fine.Agg:Com.Str + 
+    Fly.Ash:Superplas:Fine.Agg:Com.Str + Water:Superplas:Fine.Agg:Com.Str + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Com.Str + Fly.Ash:Coarse.Agg:Fine.Agg:Com.Str + 
+    Water:Coarse.Agg:Fine.Agg:Com.Str + Superplas:Coarse.Agg:Fine.Agg:Com.Str + 
+    Blast.Furnace:Fly.Ash:Age:Com.Str + Blast.Furnace:Water:Age:Com.Str + 
+    Fly.Ash:Water:Age:Com.Str + Blast.Furnace:Superplas:Age:Com.Str + 
+    Fly.Ash:Superplas:Age:Com.Str + Water:Superplas:Age:Com.Str + 
+    Blast.Furnace:Coarse.Agg:Age:Com.Str + Fly.Ash:Coarse.Agg:Age:Com.Str + 
+    Water:Coarse.Agg:Age:Com.Str + Superplas:Coarse.Agg:Age:Com.Str + 
+    Blast.Furnace:Fine.Agg:Age:Com.Str + Fly.Ash:Fine.Agg:Age:Com.Str + 
+    Water:Fine.Agg:Age:Com.Str + Superplas:Fine.Agg:Age:Com.Str + 
+    Coarse.Agg:Fine.Agg:Age:Com.Str + Blast.Furnace:Fly.Ash:Water:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:I(Blast.Furnace^2) + Blast.Furnace:Water:Superplas:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Coarse.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Coarse.Agg:I(Blast.Furnace^2) + Fly.Ash:Water:Coarse.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:I(Blast.Furnace^2) + Fly.Ash:Superplas:Coarse.Agg:I(Blast.Furnace^2) + 
+    Water:Superplas:Coarse.Agg:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Fine.Agg:I(Blast.Furnace^2) + Fly.Ash:Water:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Superplas:Fine.Agg:I(Blast.Furnace^2) + Fly.Ash:Superplas:Fine.Agg:I(Blast.Furnace^2) + 
+    Water:Superplas:Fine.Agg:I(Blast.Furnace^2) + Blast.Furnace:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + Water:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Age:I(Blast.Furnace^2) + Fly.Ash:Water:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Superplas:Age:I(Blast.Furnace^2) + Fly.Ash:Superplas:Age:I(Blast.Furnace^2) + 
+    Water:Superplas:Age:I(Blast.Furnace^2) + Blast.Furnace:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Coarse.Agg:Age:I(Blast.Furnace^2) + Water:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Superplas:Coarse.Agg:Age:I(Blast.Furnace^2) + Blast.Furnace:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Fine.Agg:Age:I(Blast.Furnace^2) + Water:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Superplas:Fine.Agg:Age:I(Blast.Furnace^2) + Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Water:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Superplas:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Com.Str:I(Blast.Furnace^2) + Water:Superplas:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + Fly.Ash:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Water:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fine.Agg:Com.Str:I(Blast.Furnace^2) + Fly.Ash:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Water:Fine.Agg:Com.Str:I(Blast.Furnace^2) + Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Age:Com.Str:I(Blast.Furnace^2) + Water:Age:Com.Str:I(Blast.Furnace^2) + 
+    Superplas:Age:Com.Str:I(Blast.Furnace^2) + Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Water:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:I(Fly.Ash^2) + Blast.Furnace:Water:Superplas:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Coarse.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:I(Fly.Ash^2) + Fly.Ash:Water:Coarse.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:I(Fly.Ash^2) + Fly.Ash:Superplas:Coarse.Agg:I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Fine.Agg:I(Fly.Ash^2) + Fly.Ash:Water:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Fine.Agg:I(Fly.Ash^2) + Fly.Ash:Superplas:Fine.Agg:I(Fly.Ash^2) + 
+    Water:Superplas:Fine.Agg:I(Fly.Ash^2) + Blast.Furnace:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + Water:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Age:I(Fly.Ash^2) + Fly.Ash:Water:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Age:I(Fly.Ash^2) + Fly.Ash:Superplas:Age:I(Fly.Ash^2) + 
+    Water:Superplas:Age:I(Fly.Ash^2) + Blast.Furnace:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Age:I(Fly.Ash^2) + Water:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Fine.Agg:Age:I(Fly.Ash^2) + Water:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Superplas:Fine.Agg:Age:I(Fly.Ash^2) + Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Water:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Superplas:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Com.Str:I(Fly.Ash^2) + Water:Superplas:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Com.Str:I(Fly.Ash^2) + Fly.Ash:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Com.Str:I(Fly.Ash^2) + Superplas:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fine.Agg:Com.Str:I(Fly.Ash^2) + Fly.Ash:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Water:Fine.Agg:Com.Str:I(Fly.Ash^2) + Superplas:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Age:Com.Str:I(Fly.Ash^2) + Water:Age:Com.Str:I(Fly.Ash^2) + 
+    Superplas:Age:Com.Str:I(Fly.Ash^2) + Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:I(Blast.Furnace^2):I(Fly.Ash^2) + Fly.Ash:Water:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:I(Blast.Furnace^2):I(Fly.Ash^2) + Water:Superplas:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + Water:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + Blast.Furnace:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + Water:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + Fly.Ash:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + Superplas:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Fly.Ash:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Superplas:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg + Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg + Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg + Blast.Furnace:Fly.Ash:Water:Superplas:Age + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Age + Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Age + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Age + Fly.Ash:Water:Superplas:Coarse.Agg:Age + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Age + Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Age + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Age + Fly.Ash:Water:Superplas:Fine.Agg:Age + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Age + Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Age + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age + Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Age + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age + Water:Superplas:Coarse.Agg:Fine.Agg:Age + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Com.Str + Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Com.Str + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Com.Str + Blast.Furnace:Water:Superplas:Coarse.Agg:Com.Str + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Com.Str + Blast.Furnace:Fly.Ash:Water:Fine.Agg:Com.Str + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Com.Str + Blast.Furnace:Water:Superplas:Fine.Agg:Com.Str + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Com.Str + Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Com.Str + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Com.Str + Fly.Ash:Water:Coarse.Agg:Fine.Agg:Com.Str + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Com.Str + Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Com.Str + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str + Blast.Furnace:Fly.Ash:Water:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Superplas:Age:Com.Str + Blast.Furnace:Water:Superplas:Age:Com.Str + 
+    Fly.Ash:Water:Superplas:Age:Com.Str + Blast.Furnace:Fly.Ash:Coarse.Agg:Age:Com.Str + 
+    Blast.Furnace:Water:Coarse.Agg:Age:Com.Str + Fly.Ash:Water:Coarse.Agg:Age:Com.Str + 
+    Blast.Furnace:Superplas:Coarse.Agg:Age:Com.Str + Fly.Ash:Superplas:Coarse.Agg:Age:Com.Str + 
+    Water:Superplas:Coarse.Agg:Age:Com.Str + Blast.Furnace:Fly.Ash:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Water:Fine.Agg:Age:Com.Str + Fly.Ash:Water:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Superplas:Fine.Agg:Age:Com.Str + Fly.Ash:Superplas:Fine.Agg:Age:Com.Str + 
+    Water:Superplas:Fine.Agg:Age:Com.Str + Blast.Furnace:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Age:Com.Str + Water:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str + Blast.Furnace:Fly.Ash:Water:Superplas:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Water:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Age:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Superplas:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Age:I(Blast.Furnace^2) + Fly.Ash:Water:Superplas:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Age:I(Blast.Furnace^2) + Fly.Ash:Water:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2) + Water:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Age:I(Blast.Furnace^2) + Blast.Furnace:Water:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Fine.Agg:Age:I(Blast.Furnace^2) + Blast.Furnace:Superplas:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Age:I(Blast.Furnace^2) + Water:Superplas:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + Water:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Water:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Water:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Fly.Ash:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Fine.Agg:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2) + Water:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Water:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Age:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Water:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Age:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Superplas:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Age:Com.Str:I(Blast.Furnace^2) + Water:Superplas:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + Water:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + Water:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Water:Coarse.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:I(Fly.Ash^2) + Fly.Ash:Water:Superplas:Coarse.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:I(Fly.Ash^2) + Fly.Ash:Water:Superplas:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + Fly.Ash:Water:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + Water:Superplas:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Age:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Superplas:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Age:I(Fly.Ash^2) + Fly.Ash:Water:Superplas:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Water:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Superplas:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Age:I(Fly.Ash^2) + Water:Superplas:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Water:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Fine.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Superplas:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Age:I(Fly.Ash^2) + Water:Superplas:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + Fly.Ash:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + Superplas:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Superplas:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Com.Str:I(Fly.Ash^2) + Fly.Ash:Water:Superplas:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Water:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Superplas:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Com.Str:I(Fly.Ash^2) + Water:Superplas:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Water:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Fine.Agg:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Superplas:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Com.Str:I(Fly.Ash^2) + Water:Superplas:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + Water:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Age:Com.Str:I(Fly.Ash^2) + Fly.Ash:Water:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Age:Com.Str:I(Fly.Ash^2) + Fly.Ash:Superplas:Age:Com.Str:I(Fly.Ash^2) + 
+    Water:Superplas:Age:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + Water:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + Water:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Superplas:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + Blast.Furnace:Superplas:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + Water:Superplas:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + Superplas:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + Water:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Blast.Furnace:Superplas:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Water:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Age + Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Age + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age + Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Age + Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Com.Str + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Com.Str + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str + Blast.Furnace:Fly.Ash:Water:Superplas:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Age:Com.Str + Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Age:Com.Str + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Age:Com.Str + Fly.Ash:Water:Superplas:Coarse.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Age:Com.Str + Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Age:Com.Str + Fly.Ash:Water:Superplas:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Age:Com.Str + Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:Com.Str + Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str + Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Water:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + Blast.Furnace:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Water:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Water:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Water:Superplas:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Age:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Superplas:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Age:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Fly.Ash:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + Blast.Furnace:Superplas:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + Water:Superplas:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + Fly.Ash:Water:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + Water:Superplas:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Coarse.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Superplas:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Water:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Fly.Ash:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Blast.Furnace:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2) + 
+    Fly.Ash:Water:Superplas:Coarse.Agg:Fine.Agg:Age:Com.Str:I(Blast.Furnace^2):I(Fly.Ash^2)
+
+
+Timing stopped at: 10.62 0.13 11.17 

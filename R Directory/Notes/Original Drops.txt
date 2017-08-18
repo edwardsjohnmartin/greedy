@@ -1,0 +1,42 @@
+drops <-function(mod1, X, data){
+      np <- nrow(coef(summary(mod1)))
+      if(np == 2){
+        new.mod <- update(mod1, ~ 1)
+        res <- list(formula = paste(Yname,"~ 1"), model = new.mod, drop = attr(terms(mod1), "term.labels"), 
+                    inf.crit = round(inf(new.mod, inform), digits = digits))
+      }
+      if(np > 2){
+        sumsat <- coef(summary(mod1))[2:np,]
+        
+        drop1 <- rownames(sumsat)[which(abs(sumsat[,3]) == min(abs(sumsat[,3])))]
+
+        if(Xcn >= 1){
+          drop1 <- Xlm[,1][Xlm[,2]==drop1]
+          m <- match(rownames(sumsat),Xlm[,2]) 
+          rownames(sumsat) <- Xlm[,1][m]
+        }
+        
+        mod.terms <- attr(terms(mod1), "term.labels")
+        
+        #--- find a legitimate model for dropping (there is a better way of doing this)" ----#
+        
+        if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1]))>0){
+          drop1 <- redo(drop1, sumsat)$drop1
+          if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1])>0)){
+            drop1 <- redo(drop1, sumsat)$drop1
+            if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1])>0)){
+              drop1 <- redo(drop1, sumsat)$drop1
+              if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1])>0)){
+                stop("Flawed model") 
+              }
+            }
+          }
+        }
+
+        f1 <- as.formula(paste(c(paste(Yname,"~ 1 "), mod.terms[mod.terms!=drop1]), collapse=" + "))
+        new.mod <- lm(f1, data= data)
+        res <- list(formula = paste(c(paste(Yname,"~ 1 "), mod.terms[mod.terms!=drop1]), collapse=" + "), 
+                    model = new.mod, drop = drop1, inf.crit = round(inf(new.mod, inform), digits = digits))
+      }
+      res
+    }

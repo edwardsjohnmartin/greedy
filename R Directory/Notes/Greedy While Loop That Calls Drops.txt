@@ -1,0 +1,9 @@
+temp - LM model with all terms
+X - list of all the main effect variables
+
+while(j <= steps){
+      temp <- drops(temp, X, data = data)
+      tab[j,] <- c(temp$formula, temp$drop, temp$inf.crit) 
+      temp <- temp$model
+      j = j + 1
+    }

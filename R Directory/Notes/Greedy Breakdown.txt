@@ -1,0 +1,190 @@
+Greedy Breakdown
+
+Takes in: 
+	formula - 
+	data - 
+	center - 
+	digits - 
+	inform - 
+
+***Start of Greedy***
+
+require(asbio)
+* requires the asbio library(Ken Aho's library)
+
+data <- get_all_vars(formula, data = data)
+* This appends the data to only include the columns of variables that appear in formula
+
+
+if(!is.null(center)){
+* This is evaluate to true when center is not null
+
+    w <- which(names(data) == center)
+    temp <- apply(data[,w], 2, function(x) x - mean(x))
+    data[,w] <- temp
+  
+m <- model.frame(formula, data = data)
+
+Y <- model.extract(m, "response")
+
+terms <- terms(m)
+
+X <- attr(terms,"term.labels")
+* Creates a list of the predictor variables in formula
+
+k <- length(X)
+* Sets k to how many predictor variables there are in formula
+
+d <- attr(terms,"dataClasses")[2:(length(X)+1)]
+* Creates a list that contains what type of data is each predictor variable in the formula(numeric or factor)
+
+Xn <- X[d == "numeric"]
+* Creates a list of the predictor variables that are of type numeric
+
+Xnn <- length(Xn[!is.na(Xn)])
+* Gets the number of numeric variables that are not missing
+
+Xc <- X[d == "factor"]
+* Creates a list of the predictor variables that are categorical
+
+Xcn <- length(Xc[!is.na(Xc)])
+* Gets the number of categorical variables that are not missing
+
+steps <- (1 + (k) + (k^2 - k)/2 + Xnn) 
+* Gets the number of times the algorithm will need to run
+
+inf <- function(model, inform){ # choose information theoretic criterion
+    switch(inform, 
+           AIC = AIC(model),
+           BIC = BIC(model),
+           PRESS = press(model, as.R2 = TRUE))
+
+tab <- matrix(nrow = steps, ncol = 3)
+  colnames(tab) <- c("Model", "Drop", inform)
+  test <- lm(formula, data = data)
+
+if(steps==1)
+* Steps can only equal one if there are no predictor variables
+
+	tab[1,] = c(deparse(formula(test$terms)), " ", round(inf(test, inform), digits = digits)) # intercept only model
+
+else if(steps>=2)
+* If there are any predictor variables this will evaluate to true
+
+	Xsq <- paste("I(", Xn, "^2)", sep="")
+	* Creates a list of all the numeric predictor variables in a squared form, ex. I(V1^2) 
+
+	Xint <- outer(X, X, function(x,y) paste(x,":",y,sep=""))
+	* Creates a matrix of all the possible interactions from the main effects
+
+	Xint <- Xint[upper.tri(Xint)]
+	* Creates a list of all the interactions that are not repeated or of the form itself:itself
+
+	Xall <- c(X, Xint, Xsq)
+	* Creates a list of all main effect variables, all interaction variables, and all squared variables
+	
+	if(Xcn >= 1)
+	* If there are any categorical variables
+
+		Xcm <- data.frame(data[,names(data)==Xc])
+		* Creates a data frame of the columns of data that correspond to categorical variables 
+
+		names(Xcm) <- Xc
+		* Sets the name of each column of categorical data to the name of the variable
+
+		nlXcm <- matrix(ncol = 1, nrow = Xcn) 
+		* Creates a matrix with one column and a row for each categorical variable
+
+		for(i in ncol(Xcm))
+		* For loop that goes from 1 to the number of categorical variables
+
+			nlXcm[i] <- nlevels(Xcm[,i])
+			* Puts how many different levels of each categorical variable in the matrix
+
+		Xcm1 <- list()
+		* Creates a new list 
+
+		for(i in 1:Xcn)
+		* For loop that goes from 1 to the number of categorical variables
+
+			Xcm1[[i]] <- paste(Xc[i],levels(data[,names(data)==Xc[i]]), sep="")[2:nlXcm[i]]
+			* Creates a list of all the levels of each categorical variable prepended with the name of the categorical variable
+			* Note: This skips the first level of the categorical variable because it will shove it into the intercept
+
+		names(Xcm1) <- Xc
+		* Sets the names of the columns of Xcm1 to the name of its categorical variable
+
+		Xclm <- 1:length(Xcm1) + 1 
+		* Creates a list of 
+
+		for(i in 1:Xcn)
+		* For loop that goes from 1 to the number of categorical variables
+
+			temp <- cbind(rep(names(Xcm1)[i], length(Xcm1[[i]])), Xcm1[[i]])
+			* Creates a 2 column matrix where the first column is the name of the categorical variable
+			* and the second column is the name of the categorical variable appended with each level of that variable
+			* There will be one row for each level of the categorical variable - 1
+
+			if(Xcn > 1)
+			* If there is more than 1 categorical variable
+			
+				Xclm <- rbind(Xclm, temp)
+				* Add the rows for each categorical variable into the same matrix
+
+			if(Xcn == 1)
+			* If there was only 1 categorical variable
+			
+				Xclm <- temp
+				* Set Xclm to what temp was 
+				
+		if(nrow(Xclm)>1)
+		* If Xclm has more than 1 row
+
+			Xclm <- Xclm[-1,]
+			* Remove the first row of Xclm 
+			* This will leave Xclm as a 2 column matrix where the first column is the names of any categorical variables
+			* The second column will be name of the categorical variable appended with each level of that variable
+			* This will not include the first level of each categorical variable
+
+		Xsqlm <- cbind(as.matrix(Xsq), as.matrix(Xsq))
+
+		Xdrop <- X[-(Xclm[,1] == X)]
+
+		XnewL <- c(Xclm[,2], Xdrop)
+
+		XnewF <- c(Xclm[,1], Xdrop)
+
+		XintL <- outer(XnewL, XnewL, function(x,y) paste(x,":",y,sep=""))
+
+      		XintL <- XintL[upper.tri(XintL)]
+
+      		XintF <- outer(XnewF, XnewF, function(x,y) paste(x,":",y,sep=""))
+
+      		XintF <- XintF[upper.tri(XintF)]
+
+		Xlm <- rbind(cbind(as.matrix(Xn), as.matrix(Xn)), Xclm, Xsqlm, cbind(as.matrix(XintF), as.matrix(XintL)))  
+ 
+      		colnames(Xlm) <- c("Predictor", "in_lm")
+
+		Yname <- names(m)[1]
+    
+    		f <- as.formula(paste(c(paste(Yname,"~ 1 "), Xall), collapse = " + "))
+    
+    		sat <- lm(f, data = data)
+
+		j = 2
+
+		temp <- sat
+
+    		tab[1,] <-c(paste(c(paste(Yname,"~ 1"), Xall), collapse=" + "), " ", round(inf(temp, inform), digits = digits))
+
+		while(j <= steps)
+
+      			temp <- drops(temp, X, data = data)
+
+     			tab[j,] <- c(temp$formula, temp$drop, temp$inf.crit) 
+
+      			temp <- temp$model
+
+      			j = j + 1
+    

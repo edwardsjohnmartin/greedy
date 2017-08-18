@@ -1,0 +1,7 @@
+model = lm(Y ~ (X1C + X2C + X3C + X4C + V01 + V02 + V03 + V04 + V05 + V06 + V07)^3, data = fbData)
+model = lm(Y ~ (X1C + X2C + X3C + X4C + X5C + V01 + V02 + V03 + V04 + V05 + V06 + V07)^3, data = fbData)
+
+Greedy - Flawed model, all t-values are NA 
+
+StepAIC - Error in stepAIC(model, data = fbData) : 
+  AIC is -infinity for this model, so 'stepAIC' cannot proceed 

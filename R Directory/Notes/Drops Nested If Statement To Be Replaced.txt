@@ -1,0 +1,12 @@
+if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1]))>0){
+          drop1 <- redo(drop1, sumsat)$drop1
+          if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1])>0)){
+            drop1 <- redo(drop1, sumsat)$drop1
+            if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1])>0)){
+              drop1 <- redo(drop1, sumsat)$drop1
+              if(any(X==drop1) & length(grep(drop1, mod.terms[mod.terms!=drop1])>0)){
+                stop("Flawed model") 
+              }
+            }
+          }
+        }

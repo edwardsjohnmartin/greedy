@@ -1,0 +1,4 @@
+1. Do squared terms need to be dropped before the main effect is dropped?
+
+2. Will squared terms ever appear as an interaction?
+

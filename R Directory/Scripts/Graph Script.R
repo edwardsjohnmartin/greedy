@@ -1,0 +1,61 @@
+plot.greedy <- read.csv("Excel Graphs/Times Plot.csv")
+attach(plot.greedy)
+
+tiff("fig1.tif", width = 350 * 6, height = 500 * 6, res = 72 * 6)
+par(mar=c(.5,1,2,2), mfrow = c(5, 2),oma = c(2,1,0,0))
+
+k = 3
+plot(0:k, s.times.ff[1:(k + 1)], type = "l", col = 1, lty = 2, xaxt = "n", ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 4))
+axis(side = 1, at = 0:k, labels = 0:k)
+points(0:k, g.times.ff[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+legend("topleft", lty = c(2, 1), legend = c("stepAIC","Greedy"), bty = "n", inset = c(0, .3))
+mtext(side=3, at = 0.6, "Forest Fires", line = -1.25, cex = .7)
+
+k = 4
+plot(0:k, s.times.w[1:(k + 1)], type = "l", lty = 2, ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 3.5))
+points(0:k, g.times.w[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+mtext(side=3, at = 0.35, "Wine", line = -1.25, cex = .7)
+
+k = 4
+plot(0:k, s.times.sg[1:(k + 1)], type = "l", lty = 2, ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 2.5))
+points(0:k, g.times.sg[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+mtext(side=3, at = 1.0, "Student Grades", line = -1.25, cex = .7)
+
+k = 5
+plot(0:k, s.times.pk[1:(k + 1)], type = "l", lty = 2, ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 3.0))
+points(0:k, g.times.pk[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+mtext(side=3, at = 0.8, "Parkinson", line = -1.25, cex = .7)
+
+k = 7
+plot(0:k, s.times.t[1:(k + 1)], type = "l", lty = 2, ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 2.5))
+points(0:k, g.times.t[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+mtext(side=3, at = 1.2, "Titanic(glm)", line = -1.25, cex = .7)
+
+k = 7
+plot(0:k, s.times.pp[1:(k + 1)], type = "l", lty = 2, ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 2.0))
+points(0:k, g.times.pp[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+mtext(side=3, at = 1.3, "Power Plant", line = -1.25, cex = .7)
+
+k = 10
+plot(0:k, s.times.np[1:(k + 1)], type = "l", lty = 2, xaxt = "n", ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 4.25))
+axis(side = 1, at = 0:k, labels = 0:k)
+points(0:k, g.times.np[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+mtext(side=3, at = 2.5, "News Popularity", line = -1.25, cex = .7)
+
+k = 11
+plot(0:k, s.times.cc[1:(k + 1)], type = "l", lty = 2, xaxt = "n", ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 2.0))
+axis(side = 1, at = 0:k, labels = 0:k)
+points(0:k, g.times.cc[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+mtext(side=3, at = 1.4, "Concrete", line = -1.25, cex = .7)
+
+k = 18
+plot(0:k, s.times.fb[1:(k + 1)], type = "l", lty = 2, xaxt = "n", ylab = "", xlab = "", lwd = 1.1, ylim = c(0, 4.5))
+axis(side = 1, at = 0:k, labels = 0:k)
+points(0:k, g.times.fb[1:(k + 1)], type = "l", lty = 1, lwd = 1.3)
+mtext(side=3, at = 2.5, "Facebook", line = -1.25, cex = .7)
+
+# mtext(side=2, outer=T, "Computer time (log(sec.))", line = 2.2, cex = .9)
+# mtext(side=1, outer=T, "Model identifier number", line = .9, cex = .9)
+# mtext(side=3, outer=T, "Runtime by algorithm")
+
+dev.off()

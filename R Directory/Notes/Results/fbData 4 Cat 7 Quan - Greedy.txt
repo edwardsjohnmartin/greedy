@@ -1,0 +1,20 @@
+ Model Drop         AIC
+1  Y ~ X1C + X2C + X3C + X4C + V01 + V02 + V03 + V04 + V05 + V06 + V07       8714.97361
+2        Y ~ X1C + X2C + X3C + X4C + V01 + V02 + V03 + V04 + V05 + V06  V07  8712.97649
+3              Y ~ X1C + X2C + X3C + X4C + V02 + V03 + V04 + V05 + V06  V01  8711.00858
+4                    Y ~ X1C + X2C + X3C + X4C + V03 + V04 + V05 + V06  V02  8709.01129
+5                          Y ~ X1C + X2C + X3C + V03 + V04 + V05 + V06  X4C  8700.94405
+6                                Y ~ X1C + X2C + X3C + V03 + V04 + V06  V05  8699.80948
+7                                      Y ~ X2C + X3C + V03 + V04 + V06  X1C  8700.95907
+8                                            Y ~ X3C + V03 + V04 + V06  X2C  8699.85134
+9                                                  Y ~ X3C + V04 + V06  V03  8698.71431
+10                                                       Y ~ X3C + V06  V04  8699.40067
+11                                                             Y ~ X3C  V06  8703.46617
+12                                                               Y ~ 1  X3C 11119.18863
+> print(AIC(fb.greedy$best))
+[1] 8698.714
+> # print(AIC(fb.stepaic))
+> 
+> print(system.time(greedy(model, data = fbData)))
+   user  system elapsed 
+   0.05    0.00    0.05 

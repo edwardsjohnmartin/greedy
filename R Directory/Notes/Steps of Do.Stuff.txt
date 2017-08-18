@@ -1,0 +1,50 @@
+all.test.pos - vector array of positions of all non-main effects, this includes squared terms
+testsat - names of main effects, this does not include squared terms
+testsat1 - names of all non-main effects, this includes squared terms
+
+testsat[x] = current main effect in testsat
+
+if(!is.null(testsat)){
+
+	for(x in 1:length(testsat)){
+
+		#
+		name.row = match(testsat[x], namesMat)
+
+		new.term = rownames(namesMat)[row(namesMat)[name.row]]
+
+        	testsat[x] = new.term
+        
+        	test = grep(testsat[x], testsat1)
+
+        	test = test + length(testsat)
+        
+        	if(length(test) == 0){
+          
+			test4 = grep(testsat[x], testsat)
+
+          		test.list[[x]] = test4
+
+        	} else {
+
+          		test.list[[x]] = test
+
+        	}
+      	}
+} else {
+
+	test.list = unique(c(grep(":", rownames(sumsat), invert = T), grep("I", rownames(sumsat), invert = T)))
+
+}
+
+step 1 - find main effects
+step 2 - find squared terms
+step 3 - find interactions
+step 4 - if a quantitative main effect is in a interaction
+		remove it from tempsat
+step 5 - if a categorical main effect is in a interaction
+		remove all of the levels of the main effect from tempsat
+step 6 - if a squared term is in a interaction
+		remove it from tempsat
+step 7 - if a squared term exists
+		remove its main effect from tempsat

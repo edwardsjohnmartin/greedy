@@ -1,0 +1,66 @@
+                                                 Model
+1  Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X4C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X5C + X3C:X6C + X4C:X5C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X4C + X1C:X3C:X5C + X1C:X4C:X5C + X2C:X3C:X4C + X2C:X3C:X5C + X2C:X3C:X6C + X2C:X4C:X5C + X3C:X4C:X5C
+2            Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X4C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X5C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X4C + X1C:X3C:X5C + X1C:X4C:X5C + X2C:X3C:X4C + X2C:X3C:X5C + X2C:X3C:X6C + X2C:X4C:X5C + X3C:X4C:X5C
+3                          Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X4C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X5C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X4C + X1C:X3C:X5C + X2C:X3C:X4C + X2C:X3C:X5C + X2C:X3C:X6C + X2C:X4C:X5C + X3C:X4C:X5C
+4                                        Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X4C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X5C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X4C + X1C:X3C:X5C + X2C:X3C:X4C + X2C:X3C:X5C + X2C:X3C:X6C + X3C:X4C:X5C
+5                                                      Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X4C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X5C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X4C + X1C:X3C:X5C + X2C:X3C:X4C + X2C:X3C:X5C + X2C:X3C:X6C
+6                                                                    Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X4C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X5C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X4C + X1C:X3C:X5C + X2C:X3C:X5C + X2C:X3C:X6C
+7                                                                              Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X5C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X4C + X1C:X3C:X5C + X2C:X3C:X5C + X2C:X3C:X6C
+8                                                                                            Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X5C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X5C + X2C:X3C:X5C + X2C:X3C:X6C
+9                                                                                                      Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X1C:X3C:X5C + X2C:X3C:X5C + X2C:X3C:X6C
+10                                                                                                                   Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X2C:X3C:X5C + X2C:X3C:X6C
+11                                                                                                                                 Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X4C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X2C:X3C:X6C
+12                                                                                                                                           Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X5C + X2C:X6C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X2C:X3C:X6C
+13                                                                                                                                                     Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X6C + X3C:X6C + X4C:X6C + X5C:X6C + X1C:X2C:X3C + X2C:X3C:X6C
+14                                                                                                                                                               Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X6C + X3C:X6C + X4C:X6C + X1C:X2C:X3C + X2C:X3C:X6C
+15                                                                                                                                                                         Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X4C + X2C:X6C + X3C:X6C + X1C:X2C:X3C + X2C:X3C:X6C
+16                                                                                                                                                                                   Y ~ X1C + X2C + X3C + X4C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X6C + X3C:X6C + X1C:X2C:X3C + X2C:X3C:X6C
+17                                                                                                                                                                                         Y ~ X1C + X2C + X3C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X6C + X3C:X6C + X1C:X2C:X3C + X2C:X3C:X6C
+18                                                                                                                                                                                                       Y ~ X1C + X2C + X3C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X2C:X6C + X3C:X6C + X1C:X2C:X3C
+19                                                                                                                                                                                                                 Y ~ X1C + X2C + X3C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X5C + X1C:X6C + X2C:X3C + X3C:X6C + X1C:X2C:X3C
+20                                                                                                                                                                                                                           Y ~ X1C + X2C + X3C + X5C + X6C + X1C:X2C + X1C:X3C + X1C:X6C + X2C:X3C + X3C:X6C + X1C:X2C:X3C
+21                                                                                                                                                                                                                                 Y ~ X1C + X2C + X3C + X6C + X1C:X2C + X1C:X3C + X1C:X6C + X2C:X3C + X3C:X6C + X1C:X2C:X3C
+22                                                                                                                                                                                                                                           Y ~ X1C + X2C + X3C + X6C + X1C:X2C + X1C:X3C + X2C:X3C + X3C:X6C + X1C:X2C:X3C
+23                                                                                                                                                                                                                                                     Y ~ X1C + X2C + X3C + X6C + X1C:X2C + X2C:X3C + X3C:X6C + X1C:X2C:X3C
+24                                                                                                                                                                                                                                                                   Y ~ X1C + X2C + X3C + X6C + X1C:X2C + X2C:X3C + X3C:X6C
+25                                                                                                                                                                                                                                                                             Y ~ X1C + X2C + X3C + X6C + X1C:X2C + X3C:X6C
+26                                                                                                                                                                                                                                                                                       Y ~ X1C + X2C + X3C + X6C + X1C:X2C
+27                                                                                                                                                                                                                                                                                                 Y ~ X1C + X2C + X3C + X6C
+28                                                                                                                                                                                                                                                                                                       Y ~ X2C + X3C + X6C
+29                                                                                                                                                                                                                                                                                                             Y ~ X3C + X6C
+30                                                                                                                                                                                                                                                                                                                   Y ~ X3C
+31                                                                                                                                                                                                                                                                                                                     Y ~ 1
+          Drop         AIC
+1               8414.06208
+2      X4C:X5C  8414.06208
+3  X1C:X4C:X5C  8414.06208
+4  X2C:X4C:X5C  8414.06208
+5  X3C:X4C:X5C  8471.79419
+6  X2C:X3C:X4C  8548.27311
+7      X1C:X4C  8548.27311
+8  X1C:X3C:X4C  8564.16196
+9      X3C:X5C  8564.16196
+10 X1C:X3C:X5C  8562.23021
+11 X2C:X3C:X5C  8693.57562
+12     X3C:X4C  8707.82175
+13     X2C:X5C  8710.52109
+14     X5C:X6C  8750.12104
+15     X4C:X6C  8754.87479
+16     X2C:X4C  8749.07003
+17         X4C  8748.81482
+18 X2C:X3C:X6C  8750.33709
+19     X2C:X6C  8747.14873
+20     X1C:X5C  8737.25256
+21         X5C  8742.11378
+22     X1C:X6C  8738.08461
+23     X1C:X3C  8738.08461
+24 X1C:X2C:X3C  8715.06491
+25     X2C:X3C  8711.60579
+26     X3C:X6C  8707.37874
+27     X1C:X2C  8703.75329
+28         X1C  8700.15589
+29         X2C   8698.7396
+30         X6C  8703.46617
+31         X3C 11119.18863
+> print(AIC(fb.greedy$best))
+[1] 8414.062

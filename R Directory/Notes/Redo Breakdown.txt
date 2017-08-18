@@ -1,0 +1,44 @@
+Redo Breakdown
+
+Takes in: 
+	drop1 : A main effect that cannot be dropped because there are more instances of it
+	sumsat : The matrix of all the current predictor variables 
+		 where the name of the rows are the variables 
+		 and the 3rd column is the t-values
+	
+***Start of Redo***
+
+sumsat1 <- sumsat[rownames(sumsat)!=drop1,]
+* Creates a new matrix of all current predictor variables excluding drop1
+
+if(class(sumsat1)=="numeric") 
+* This checks to see if the class of sumsat1 is a numeric
+        
+	sumsat1 = t(as.matrix(sumsat1))
+	* If it was a numeric, it gets transformed into a matrix
+
+rn <- rownames(sumsat)[rownames(sumsat)!=drop1]
+* This will create a list of all the predictor variables that are the not drop1
+
+if(nrow(sumsat1)==1)
+* This checks to see if there is only 1 row in sumsat1
+
+	rownames(sumsat1) = rn
+	* If it only had 1 row, make the name of the row the last predictor variable
+
+drop2 <- rn[which(abs(sumsat1[,3]) == min(abs(sumsat1[,3])))]
+* This will set drop2 to the name of the predictor variable with the lowest t-value after drop1
+
+sumsat2 = sumsat[rownames(sumsat)!=drop2,]
+* This will create a new matrix by adding back in drop1 and removing drop2
+
+Returns: 
+	res <- list(sumsat = sumsat2, drop1 = drop2)
+	* This will create a list that will be returned after the redo function
+  	  Contained in the list is:
+		$sumsat - The matrix after drop1 has been added back in and drop2 taken out
+		$drop1 - The term that was dropped in place of the main effect that couldn't be dropped yet
+
+***End of Redo***
+
+

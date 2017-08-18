@@ -1,0 +1,47 @@
+                                                                                                           Model Drop
+1  Y ~ X1C + X2C + X3C + X4C + X5C + X6C + V01 + V02 + V03 + V04 + V05 + V06 + V07 + V08 + V09 + V10 + V11 + V12     
+2        Y ~ X1C + X2C + X3C + X4C + X6C + V01 + V02 + V03 + V04 + V05 + V06 + V07 + V08 + V09 + V10 + V11 + V12  X5C
+3              Y ~ X1C + X2C + X3C + X4C + X6C + V01 + V02 + V04 + V05 + V06 + V07 + V08 + V09 + V10 + V11 + V12  V03
+4                    Y ~ X1C + X2C + X3C + X6C + V01 + V02 + V04 + V05 + V06 + V07 + V08 + V09 + V10 + V11 + V12  X4C
+5                          Y ~ X1C + X2C + X3C + X6C + V01 + V02 + V04 + V05 + V06 + V07 + V08 + V10 + V11 + V12  V09
+6                                Y ~ X1C + X2C + X3C + X6C + V01 + V02 + V04 + V05 + V06 + V07 + V08 + V11 + V12  V10
+7                                      Y ~ X1C + X2C + X3C + X6C + V01 + V02 + V04 + V05 + V06 + V07 + V08 + V11  V12
+8                                            Y ~ X1C + X2C + X3C + X6C + V01 + V04 + V05 + V06 + V07 + V08 + V11  V02
+9                                                  Y ~ X1C + X2C + X3C + X6C + V01 + V04 + V06 + V07 + V08 + V11  V05
+10                                                       Y ~ X1C + X2C + X3C + X6C + V04 + V06 + V07 + V08 + V11  V01
+11                                                             Y ~ X1C + X2C + X3C + X6C + V04 + V06 + V08 + V11  V07
+12                                                                   Y ~ X2C + X3C + X6C + V04 + V06 + V08 + V11  X1C
+13                                                                         Y ~ X2C + X3C + X6C + V04 + V06 + V08  V11
+14                                                                               Y ~ X3C + X6C + V04 + V06 + V08  X2C
+15                                                                                     Y ~ X3C + X6C + V04 + V08  V06
+16                                                                                           Y ~ X3C + V04 + V08  X6C
+17                                                                                                 Y ~ X3C + V04  V08
+18                                                                                                       Y ~ X3C  V04
+19                                                                                                         Y ~ 1  X3C
+           AIC
+1   8636.63906
+2   8646.35223
+3   8644.35481
+4   8636.34171
+5   8636.34171
+6   8634.37508
+7    8632.8399
+8   8631.20021
+9   8629.72768
+10  8628.27143
+11  8626.72618
+12  8624.38421
+13  8688.96195
+14   8688.4745
+15  8690.31769
+16  8695.71458
+17  8704.29171
+18  8703.46617
+19 11031.66575
+> print(AIC(fb.greedy$best))
+[1] 8624.384
+> # print(AIC(fb.stepaic))
+> 
+> print(system.time(greedy(model, data = fbData)))
+   user  system elapsed 
+   0.08    0.00    0.08 
